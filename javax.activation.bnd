@@ -1,4 +1,12 @@
--output: bundle
--classpath:		jar/javax.activation-1.1.1.jar
-Export-Package: *;version=1.1.1
+v:               1.1.1
+
+-classpath:		 jar/javax.activation-${v}.jar
+-output:		 bundle
+includeresource: {readme.md=doc/readme.md}
+
+Bundle-Version:	 ${v}.${tstamp}
+Export-Package:  javax.activation;version=${v}
 Private-Package: com.sun.activation.*
+Bundle-Description: \
+  A wrapped version of javax.activation ${v} JAR from Oracle. \
+  This bundle is downloaded from maven and wrapped by bnd.
