@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC1010
+rm -rf jar bundle
+mkdir jar
+bnd copy https://repo.maven.apache.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar \
+  jar/javax.activation-1.1.1.jar
+bnd print --uses jar/javax.activation-1.1.1.jar
+bnd jar/javax.activation-1.1.1.jar
+mkdir bundle
+bnd javax.activation.bnd
+ls bundle
+bnd bundle/javax.activation.jar
+rm bundle/**
+bnd do --output bundle javax.activation.bnd
+ls bundle
+bnd bundle/javax.activation.jar
