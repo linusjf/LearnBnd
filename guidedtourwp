@@ -14,3 +14,8 @@ rm bundle/**
 bnd do --output bundle javax.activation.bnd
 ls bundle
 bnd bundle/javax.activation.jar
+bnd copy --strip https://repo.maven.apache.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar \
+  jar/javax.mail-1.5.2.jar
+bnd print --uses jar/javax.mail-1.5.2.jar
+bnd javax.mail.bnd
+bnd print -i javax.mail.jar
