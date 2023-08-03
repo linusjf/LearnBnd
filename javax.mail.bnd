@@ -1,5 +1,5 @@
 v:          1.5.2
-
+-removeheaders: !Bundle-*, Bundle-Name:i
 -classpath: \
   bundle/javax.activation.jar, \
   jar/javax.mail-${v}.jar
@@ -9,3 +9,4 @@ Bundle-Description: \
   An OSGi wrapped version of the javax.mail library downloaded from maven.
 Export-Package: javax.mail.*
 Private-Package: com.sun.mail.*
+Import-Package: javax.net.*;version=1.1, *

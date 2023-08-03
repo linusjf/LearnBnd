@@ -1,0 +1,5 @@
+-include: common.bnd
+-output:             bundle
+-sub: \
+  javax.activation.bnd, \
+  javax.mail.bnd

@@ -1,0 +1,3 @@
+-includeresource:   \
+  @bundle/javax.activation.jar, \
+  @bundle/javax.mail.jar

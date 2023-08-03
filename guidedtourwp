@@ -19,3 +19,10 @@ bnd copy --strip https://repo.maven.apache.org/maven2/com/sun/mail/javax.mail/1.
 bnd print --uses jar/javax.mail-1.5.2.jar
 bnd javax.mail.bnd
 bnd print -i javax.mail.jar
+bnd javax.mail.jar
+rm bundle/*
+bnd javax.bnd
+ls bundle
+bnd javax.mail.all.bnd
+bnd javax.mail.all.jar
+bnd print -i javax.mail.all.jar
