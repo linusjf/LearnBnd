@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+bnd add workspace com.acme.prime
+cd com.acme.prime || exit
+ls
+ls cnf
+bnd plugins
+bnd add plugin
+bnd add plugin eclipse
+bnd add plugin git
+bnd plugins
+ls cnf/ext
+more cnf/ext/eclipse.bnd
+bnd build
+bnd add project com.acme.prime.hello
+ls -a com.acme.prime.hello
+bnd add plugin maven
+more cnf/ext/maven.bnd
