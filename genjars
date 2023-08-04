@@ -5,3 +5,4 @@ bnd copy https://github.com/TooTallNate/Java-WebSocket/releases/download/v1.5.4/
   jar/WebSocket-src.jar
 ls jar
 bnd org.websocket.bnd
+bnd org.websocket-1.0.2.jar

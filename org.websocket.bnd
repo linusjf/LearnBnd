@@ -16,3 +16,4 @@ Bundle-Version: 1.0.2
 
 -includeresource: @jar/WebSocket.jar, OSGI-OPT/src=@jar/WebSocket-src.jar
 -exportcontents: org.java_websocket
+-fixupmessages "Classes found in the wrong directory"; restrict:=error; is:=warning
