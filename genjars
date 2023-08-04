@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+bnd copy https://github.com/TooTallNate/Java-WebSocket/releases/download/v1.5.4/Java-WebSocket-1.5.4.jar \
+  jar/WebSocket.jar
+bnd copy https://github.com/TooTallNate/Java-WebSocket/releases/download/v1.5.4/Java-WebSocket-1.5.4-sources.jar \
+  jar/WebSocket-src.jar
+ls jar
+bnd org.websocket.bnd
